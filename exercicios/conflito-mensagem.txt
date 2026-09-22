@@ -1,2 +1,3 @@
 # Exercício: resolução de conflito
 mensagem=Bem-vindos ao treinamento GitHub For Developers!
+Teste Boas Vindas
