@@ -1,2 +1,2 @@
 # Exercício: resolução de conflito
-mensagem=Olá, time de desenvolvimento!
+mensagem=Bem-vindos ao treinamento, time de desenvolvimento!!!!
