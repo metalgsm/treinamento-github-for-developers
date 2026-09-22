@@ -1,0 +1,17 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente e segredos locais
+.env
+.env.*
+!.env.example
+
+# Dependências e saídas de build
+node_modules/
+dist/
+coverage/
+
+# Configurações locais de IDE
+.idea/
+*.code-workspace
