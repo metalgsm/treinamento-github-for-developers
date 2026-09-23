@@ -1,0 +1,25 @@
+name: CI do exercício Pix
+
+on:
+  push:
+    branches: ['feature/**', 'feat/**', 'fix/**', 'hotfix/**', 'release/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+ testar-pix:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Obter código
+      uses: actions/checkout@v4
+    - name: Preparar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Verificar Sintaxe
+      run: python -m compileall -q exercicios tests
+    - name: Executar Testes
+      run: python -m unittest discover -s tests -v
