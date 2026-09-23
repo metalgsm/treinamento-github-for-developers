@@ -29,6 +29,12 @@ class AvaliarPixTests(unittest.TestCase):
             avaliar_pix(Decimal("80.00"), Decimal("100.00"), Decimal("150.00"), Decimal("100.00")),
         )
 
+    def test_aprova_quando_atinge_limite_diario_exato(self):
+        self.assertEqual(
+            "aprovado",
+            avaliar_pix(Decimal("50.00"), Decimal("100.00"), Decimal("150.00"), Decimal("100.00")),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
