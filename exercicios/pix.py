@@ -7,7 +7,7 @@ def avaliar_pix(
     limite_diario: Decimal,
     enviado_hoje: Decimal,
 ) -> str:
-    if valor <= 0:
+    if valor <= 10:
         return "valor inválido"
     if valor > saldo:
         return "saldo insuficiente"
